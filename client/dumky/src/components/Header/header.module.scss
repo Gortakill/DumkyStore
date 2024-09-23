@@ -1,0 +1,153 @@
+%display{
+    display: flex;
+    flex-direction: row;
+}
+
+header{
+    @extend %display;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    padding: 1rem 0;
+    .Menu{
+        display: flex;
+        width: 30vw;
+        margin-left: 1rem;
+        button{
+            @extend %display;
+            align-items: center;
+            border: none;
+            background-color: transparent;
+            color: black;
+            font-size: medium; 
+            cursor: pointer;
+            margin-right: 2rem;
+        }
+        .admin{
+            border: 1px solid grey;
+            background-color: transparent;
+            padding: .5rem 1rem;
+            border-radius: 10px;
+            margin-right: auto;
+            text-decoration: none;
+            color: black;
+        }
+    }
+    .Title{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+    .Info{
+        @extend %display;
+        align-items: center;
+        margin-left: auto;
+        .Form{
+            position: relative;
+            button{
+                border: none;
+                background-color: transparent;
+                position: absolute;
+                left: -5px;
+                top: -1px;
+                z-index: 1;
+                color: grey;
+                cursor: pointer;
+            }
+            input{
+                padding: .5rem 2rem;
+                border-radius: 20px;
+                border: 1px solid grey;
+                margin-right: 1rem;
+            }
+        }
+        button{
+            background-color: transparent;
+            padding: .3rem .5rem;
+            border-radius: 50px;
+            border: 1px solid black;
+            color: black;
+            margin-right: 1rem;
+            position: relative;
+        }
+        .countLike{
+            position: absolute;
+            top: -9px;
+            right: -10px;
+            background-color: grey;
+            padding: .3rem .5rem;
+            border-radius: 50px;
+        }
+        .countCart{
+            position: absolute;
+            top: -9px;
+            right: -10px;
+            background-color: grey;
+            padding: .3rem .5rem;
+            border-radius: 50px; 
+        }
+    }
+}
+
+@media(max-width: 670px){
+    header{
+        flex-direction: column;
+        .Menu{
+            margin-right: auto;
+        }
+        .Title{
+            margin-bottom: 1rem
+        }
+        .Info{
+            @extend %display;
+            align-items: center;
+            .Form{
+                position: relative;
+                button{
+                    border: none;
+                    background-color: transparent;
+                    position: absolute;
+                    left: -5px;
+                    top: -1px;
+                    z-index: 1;
+                    color: grey;
+                    cursor: pointer;
+                }
+                input{
+                    padding: .5rem 2rem;
+                    border-radius: 20px;
+                    border: 1px solid grey;
+                    margin-right: 1rem;
+                }
+            }
+            button{
+                background-color: transparent;
+                padding: .3rem .5rem;
+                border-radius: 50px;
+                border: 1px solid black;
+                color: black;
+                margin-right: 1rem;
+                position: relative;
+            }
+            .countLike{
+                position: absolute;
+                top: -9px;
+                right: -10px;
+                background-color: grey;
+                padding: .3rem .5rem;
+                border-radius: 50px;
+            }
+            .countCart{
+                position: absolute;
+                top: -9px;
+                right: -10px;
+                background-color: grey;
+                padding: .3rem .5rem;
+                border-radius: 50px; 
+            }
+        }
+    }
+}

@@ -1,0 +1,52 @@
+.basket{
+    display: none;
+}
+.basket.active{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: white;
+    border: 1px solid grey;
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    z-index: 3;
+    .bask{
+        display: flex;
+        align-items: center;
+        margin-bottom: .5rem;
+        .close{
+            width: 10%;
+            margin-left: auto;
+            border: none;
+            background-color: transparent;
+        }
+    }
+    .goodsBasket{
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+        border: 1px solid grey;
+        padding: .5rem;
+        border-radius: 10px;
+        .info{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 60%;
+            margin-left: 1rem;
+        }
+        button{
+            border: none;
+            background-color: transparent;
+            margin-left: 1rem;
+        }
+    }
+    span{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

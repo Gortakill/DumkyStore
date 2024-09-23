@@ -1,0 +1,35 @@
+.registration{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+    justify-content: center;
+    div{
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        input{
+            width: 100%;
+            padding: .5rem 1rem;
+        }
+        p{
+            font-size: small;
+            color: red;
+        }
+    }
+    .buttons{
+        display: flex;
+        flex-direction: row;
+        width: 20%;
+        .login{
+            margin-right: auto;
+        }
+        button{
+            padding: .5rem 1rem;
+            border: 1px solid black;
+            background-color: transparent;
+            border-radius: 10px;
+        }
+    }
+}

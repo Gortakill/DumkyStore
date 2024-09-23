@@ -1,0 +1,50 @@
+main{
+    display: flex;
+    justify-content: space-around;
+    .addGood{
+        display: flex;
+        flex-direction: column;
+        input{
+            padding: .5rem 1rem;
+            margin-top: .5rem;
+        }
+        .img{
+            padding: 0;
+        }
+        select{
+            padding: .5rem 1rem;
+        }
+        button{
+            margin-top: .5rem;
+            border: 1px solid grey;
+            background-color: transparent;
+            padding: 1rem;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        p{
+            color: red;
+            font-size: small;
+        }
+    }
+    .addCatalog{
+        display: flex;
+        flex-direction: column;
+        p{
+            color: red;
+            font-size: small;
+        }
+        input{
+            padding: .5rem 1rem;
+            margin-top: .5rem;
+        }
+        button{
+            margin-top: .5rem;
+            border: 1px solid grey;
+            background-color: transparent;
+            padding: 1rem;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    }
+}

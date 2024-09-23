@@ -1,0 +1,114 @@
+.Profile.nonAuth{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    .buttonAuth{
+        display: flex;
+        flex-direction: column;
+        font-size: larger;
+        font-weight: 500;
+        align-items: center;
+        h2{
+            margin-bottom: 1rem;
+        }
+        .button{
+            text-decoration: none;
+            color: black;
+            margin-bottom: 1rem;
+            border: 1px solid grey;
+            padding: .5rem 1rem;
+            border-radius: 10px;
+        }
+    }
+}
+.Profile{
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    .userInfo{
+        display: flex;
+        width: fit-content;
+        border-left:1px solid grey;
+        border-right:1px solid grey;
+        border-bottom: 1px solid grey;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 1rem;
+        .info{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            h2{
+                margin-left: 1rem;
+            }
+            h4{
+                margin-left: 1rem;
+            }
+            .button{
+                margin-top: 1rem;
+                margin-left: 1rem;
+                border: 1px solid grey;
+                background-color: transparent;
+                padding: 1rem;
+                border-radius: 10px;
+                cursor: pointer;
+                text-decoration: none;
+                color: black;
+            }
+        }
+        .basket{
+            display: flex;
+            flex-direction: column;
+            margin-left: 4rem;
+            h1{
+                margin-bottom: 1rem;
+                text-align: center;
+            }
+            .currentGood{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin-bottom: 1rem;
+                border: 1px solid grey;
+                padding: 1rem;
+                border-radius: 10px;
+                .info{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    width: 60%;
+                    margin-left: 1rem;
+                }
+            }
+        }
+        .liked{
+            display: flex;
+            flex-direction: column;
+            margin-left: 4rem;
+            margin-right: 1rem;
+            h1{
+                margin-bottom: 1rem;
+                text-align: center;
+            }
+            .currentGood{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin-bottom: 1rem;
+                border: 1px solid grey;
+                padding: 1rem;
+                border-radius: 10px;
+                .info{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    width: 60%;
+                    margin-left: 1rem;
+                }
+            }
+        }
+    }
+}
